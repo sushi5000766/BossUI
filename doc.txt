@@ -12,7 +12,7 @@ Red section
 	I would like this area to be modular. So up to 10 abilites can be supported.
 
 	Visually
-	Each ability needs to be stacked vertically with a timer that is able to slide out from the icon frame. Once the timer is expired it needs to slide back in
+	Each ability needs to be stacked vertically with a timer that is able to slide out from the icon frame. Once the timer is expired it needs to slide back in.  I would also like a tooltip to show when hovering over the ability
 
 	Lua
 	I need each ability to be able to be created and destroyed as a table. Each ability should have a reference number (eg 0 - 9). Timers need to be able to be

@@ -1,0 +1,29 @@
+UI sections.png
+
+Black section
+
+	Visually
+	The bar will display the bosses mana with numbers on top showing the exact mana
+
+	Lua
+	I will need to be able to create and destroy the bar. And Assign the bar to a unit.
+
+Red section
+	I would like this area to be modular. So up to 10 abilites can be supported.
+
+	Visually
+	Each ability needs to be stacked vertically with a timer that is able to slide out from the icon frame. Once the timer is expired it needs to slide back in
+
+	Lua
+	I need each ability to be able to be created and destroyed as a table. Each ability should have a reference number (eg 0 - 9). Timers need to be able to be
+	created and destroyed using that reference number. The only other parameter for the timer needs to be the duration.
+
+Blue section
+	Visually
+	A small icon that represent a different currency.
+
+	Lua
+	I will need to be able to get the current value and set the current value
+
+General
+	I would like the hero portraits at the top, time of day, team kill numbers, glyph, quickbuy, and courior UI not shown

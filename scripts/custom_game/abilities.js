@@ -66,7 +66,7 @@ function CancelAbilityTimer(ev) {
 	GameEvents.Subscribe("start_ability_timer", StartAbilityTimer)
 	GameEvents.Subscribe("cancel_ability_timer", CancelAbilityTimer)
 })()
-
+/*
 RemoveBossAbility({
 	reference_number: "1",
 })
@@ -83,3 +83,4 @@ $.Schedule(2, function() {
 		reference_number: "1"
 	})
 })
+*/

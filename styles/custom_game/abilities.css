@@ -1,7 +1,7 @@
 .abilities-container {
 	flow-children: down;
 	horizontal-align: right;
-	margin-top: 43px;
+	margin-top: 90px;
 }
 .ability {
 	tooltip-position: left;

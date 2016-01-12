@@ -1,0 +1,17 @@
+<root>
+  <styles>
+    <include src="file://{resources}/styles/custom_game/abilities.css" />
+    <include src="file://{resources}/styles/dotastyles.css" />
+  </styles>
+  <scripts>
+    <include src="file://{resources}/scripts/custom_game/ability.js" />
+  </scripts>
+  <Panel class="ability" onmouseover="$.DispatchEvent('DOTAShowAbilityTooltip', $.GetContextPanel(), $.GetContextPanel().GetAttributeString('abilityname', ''))" onmouseout="$.DispatchEvent('DOTAHideAbilityTooltip')">
+  	<Panel class="ability-image-container">
+  		<DOTAAbilityImage class="ability-image" />
+  	</Panel>
+  	<Panel class="ability-timer">
+  		<Label class="ability-timer-text" text="2.0" />
+  	</Panel>
+  </Panel>
+</root>

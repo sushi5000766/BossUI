@@ -1,0 +1,43 @@
+.abilities-container {
+	flow-children: down;
+	horizontal-align: right;
+	margin-top: 90px;
+}
+.ability {
+	tooltip-position: left;
+	horizontal-align: right;
+	width: 165px;
+}
+.ability-image-container {
+	background-image: url("file://{images}/custom_game/ability_frame.png");
+	background-size: contain;
+	width: 80px;
+	height: 80px;
+	padding: 11px;
+	horizontal-align: right;
+}
+.ability-image {
+	height: 100%;
+	width: 100%;
+}
+
+.ability-timer {
+	background-image: url("file://{images}/custom_game/boss_bar_timer.png");
+	background-size: contain;
+	width: 100px;
+	height: 70px;
+	vertical-align: center;
+	z-index: -1;
+	transition: transform 0.2s ease-in-out 0.0s;
+	transform: translateX(85px);
+}
+.ability.active .ability-timer {
+	transform: translateX(0px);
+}
+.ability-timer-text {
+	horizontal-align: center;
+	vertical-align: center;
+	color: white;
+	font-size: 25px;
+	margin-left: 5px;
+}

@@ -7,6 +7,9 @@
 	width: 450px;
 	background-size: cover;
 }
+.manabar-outer.hide {
+	transform: translateY(-300px);
+}
 .manabar-inner {
 	horizontal-align: center;
 	width: 100%;

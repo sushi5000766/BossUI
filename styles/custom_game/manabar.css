@@ -1,0 +1,33 @@
+.manabar-outer {
+	horizontal-align: center;
+	background-image: url("file://{images}/custom_game/mana_bar_cropped_trans.png");
+	background-position: center bottom;
+	margin-top: 43px;
+	height: 100px;
+	width: 450px;
+	background-size: cover;
+}
+.manabar-outer.hide {
+	transform: translateY(-300px);
+}
+.manabar-inner {
+	horizontal-align: center;
+	width: 100%;
+	height: 100%;
+	margin: 22px 36px 36px 36px;
+}
+.manabar-fill {
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#86009E), to(#470054));
+	height: 100%;
+	width: 0%;
+	transition: width 0.2s linear 0s;
+}
+.manabar-text {
+	color: white;
+	width: 100%;
+	horizontal-align: center;
+	text-align: center;
+	font-size: 30px;
+	text-shadow: 2px 2px 4px 1.5 #222222;
+	margin-top: 3px;
+}

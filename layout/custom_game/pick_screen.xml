@@ -1,0 +1,89 @@
+<root>
+  <styles>
+    <include src="file://{resources}/styles/custom_game/pick_screen.css" />
+    <include src="file://{resources}/styles/dotastyles.css" />
+  </styles>
+  <scripts>
+    <include src="file://{resources}/scripts/custom_game/pick_screen.js" />
+  </scripts>
+  <Panel class="pick-screen">
+    <Panel class="column left">
+      <Panel class="top left">
+        <Panel class="rotator">
+          <Button class="rotator-btn left-btn" />
+          <Label class="title-label gold" text="Fire Mage" />
+          <Button class="rotator-btn right-btn" />
+        </Panel>
+      </Panel>
+      <Panel class="middle left">
+        <Panel class="portrait-container">
+          <Image class="portrait" src="file://{resources}/images/custom_game/pick_screen/portraits/portrait fire mage.png" />
+        </Panel>
+      </Panel>
+      <Panel class="bottom left">
+        <Panel class="stats">
+          <Panel class="column stats-left">
+            <Panel class="health stat">
+              <Label id="health-label" />
+            </Panel>
+            <Panel class="damage stat">
+              <Label id="damage-label" />
+            </Panel>
+          </Panel>
+          <Panel class="column stats-right">
+            <Panel class="mana stat">
+              <Label id="mana-label" />
+            </Panel>
+            <Panel class="movespeed stat">
+              <Label id="movespeed-label" />
+            </Panel>
+          </Panel>
+        </Panel>
+      </Panel>
+    </Panel>
+    <Panel class="column right">
+      <Panel class="top right">
+        <Label class="abilities-header title-label gold" text="Abilities" />
+      </Panel>
+      <Panel class="middle right">
+        <Panel class="abilities-showcase">
+        </Panel>
+      </Panel>
+      <Panel class="bottom right">
+        <Panel class="descriptions">
+          <Panel class="column">
+            <Panel class="description">
+              <Label class="description-static gold" text="Role:" />
+              <Label class="description-dynamic" text="Offensive Mage" />
+            </Panel>
+            <Panel class="description description-spacer" />
+            <Panel class="description">
+              <Label class="description-static gold" text="Magic Damage:" />
+              <Label class="description-dynamic" text="Offensive Mage" />
+            </Panel>
+            <Panel class="description description-spacer" />
+            <Panel class="description">
+              <Label class="description-static gold" text="Physical Damage:" />
+              <Label class="description-dynamic" text="Offensive Mage" />
+            </Panel>
+          </Panel>
+          <Panel class="column">
+            <Panel class="description description-spacer" />
+            <Panel class="description">
+              <Label class="description-static gold" text="Strong Vs:" />
+              <Label class="description-dynamic" text="Offensive Mage" />
+            </Panel>
+            <Panel class="description description-spacer" />
+            <Panel class="description">
+              <Label class="description-static gold" text="Weak Vs:" />
+              <Label class="description-dynamic" text="Offensive Mage" />
+            </Panel>
+            <Panel class="description description-spacer" />
+          </Panel>
+        </Panel>
+        <Button class="pick-button">
+        </Button>
+      </Panel>
+    </Panel>
+  </Panel>
+</root>

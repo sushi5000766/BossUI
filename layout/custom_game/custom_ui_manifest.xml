@@ -8,5 +8,7 @@
   </script>
   <Panel>
     <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/abilities.xml" />
+    <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/manabar.xml" />
+    <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/resource.xml" />
   </Panel>
 </root>

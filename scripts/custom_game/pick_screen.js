@@ -56,7 +56,6 @@ function pickHero() {
 	}
 }
 
-
 var heroes = [
 	{
 		heroname: "Fire Mage",
@@ -96,3 +95,6 @@ var heroes = [
 		abilities: [],
 	},
 ]
+
+
+setDisplayedHero(displayedHeroIndex)

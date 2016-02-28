@@ -5,6 +5,15 @@
 Panel {
 	width: 100%;
 }
+Button {
+	transition: saturation 0.1s linear 0.0s;
+}
+Button:hover {
+	saturation: 1.5;
+}
+Button:active {
+	saturation: 2;
+}
 
 /* Utility */
 .title-label {
@@ -27,7 +36,7 @@ Panel {
 	background-image: url("file://{images}/custom_game/pick_screen/background.png");
 	padding: 80px 110px 40px 110px;
 	background-size: 100%;
-	background-color: black;
+	background-color: #191D21;
 	flow-children: right;
 }
 .column {
@@ -59,10 +68,9 @@ Panel {
 }
 
 .portrait-container {
-	background-image: url("file://{images}/custom_game/pick_screen/portrait frame.png");
+	background-image: url("file://{images}/custom_game/pick_screen/portrait box.png");
 	height: 635px;
 	background-size: 100%;
-	background-color: blue;
 	padding: 25px;
 }
 .portrait {
@@ -101,7 +109,7 @@ Panel {
 	height: 38.4px;
 }
 .damage {
-	background-image: url("file://{images}/custom_game/pick_screen/damage stat.png");
+	background-image: url("file://{images}/custom_game/pick_screen/attack stat.png");
 	width: 120px;
 	height: 60px;
 }
@@ -111,7 +119,7 @@ Panel {
 	height: 38.4px;
 }
 .movespeed {
-	background-image: url("file://{images}/custom_game/pick_screen/movement stat.png");
+	background-image: url("file://{images}/custom_game/pick_screen/speed stat.png");
 	background-size: 84px 88px;
 	background-repeat: no-repeat;
 	width: 140px;
@@ -159,7 +167,7 @@ Panel {
 	flow-children: right;
 }
 .descriptions {
-	background-image: url("file://{images}/custom_game/pick_screen/bot box.png");
+	background-image: url("file://{images}/custom_game/pick_screen/text stat box.png");
 	height: 246px;
 	background-size: 100%;
 	width: 948px;
@@ -187,4 +195,7 @@ Panel {
 	width: 227px;
 	background-size: 100%;
 	margin: 10px 10px 10px 20px;
+}
+.pick-button:active {
+	transform: translateY(2px);
 }

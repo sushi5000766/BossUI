@@ -1,0 +1,166 @@
+For Role 
+Use Gray for the stat
+
+For Magic and Physical
+None = Red
+Low = Orange
+Medium = Yellow
+High = Green
+Very High = Brighter Green
+
+For Weak and Strong
+Water/Ice = Blue
+Fire/Lightning = Red
+Light/Nature = Yellow / Green
+Shadow = Dark Purple
+
+
+------------------------
+
+Death Knight
+
+Health:	3000
+Mana:	200
+Attack:	75
+Move:	280
+
+Role: Offensive Melee
+Physical: High
+Magic:	High
+Weak:	Shadow
+Strong:	Light & Nature
+
+------------------------
+Druid
+
+Health:	3000
+Mana:	200
+Attack:	25 - 45
+Move:	280
+
+Role: Offensive Hybrid
+Physical: High(Bear Form)
+Magic:	High(Druid Form)
+Weak:	None
+Strong:	None
+
+------------------------
+
+Fire Mage
+
+Health:	3000
+Mana:	200
+Attack:	25
+Move:	280
+
+Role: Offensive Mage
+Physical: None
+Magic:	Very High
+Weak:	Fire & Lightning
+Strong:	Ice & Water
+
+------------------------
+
+Ice Mage
+
+Health:	3000
+Mana:	200
+Attack:	25
+Move:	280
+
+Role: Offensive Mage
+Physical: None
+Magic:	High
+Weak:	Ice & Water
+Strong:	Fire & Lightning
+
+------------------------
+
+Paladin
+
+Health:	3500
+Mana:	200
+Attack:	40
+Move:	280
+
+Role: Supporting Healer
+Physical: Low
+Magic:	Medium
+Weak:	Light
+Strong:	Shadow
+------------------------
+
+Priest
+
+Health:	3000
+Mana: 	250
+Attack:	25
+Move:	280
+
+Role: Healer
+Physical: None
+Magic:	Low
+Weak:	Light
+Strong:	Shadow
+
+------------------------
+
+Ranger
+
+Health:	2500
+Mana:	200
+Attack:	25 - 50
+Move:	280
+
+Role: Offensive Ranged
+Physical: Medium
+Magic:	High
+Weak:	None
+Strong: None
+
+------------------------
+
+Rogue
+
+Health:	2500
+Mana:	200
+Attack:	45
+Move:	280
+
+Role: Offensive Melee
+Physical: Very High
+Magic:	None
+Weak:	None
+Strong:	None
+
+------------------------
+
+Warlock
+
+Health:	3000
+Mana:	200
+Attack:	25
+Move:	280
+
+Role: Offensive Mage
+Physical: None
+Magic:	Very High
+Weak:	Shadow
+Strong:	Light & Nature
+
+------------------------
+
+Warrior
+
+Health:	5000
+Mana:	200
+Attack:	30
+Move:	280
+
+Role: Tank
+Physical: Medium
+Magic:	Low
+Weak:	None
+Strong:	None
+
+------------------------

@@ -10,14 +10,14 @@
     <Panel class="column left">
       <Panel class="top left">
         <Panel class="rotator">
-          <Button class="rotator-btn left-btn" onactivate="prevHero()" />
+          <Button class="rotator-btn left-btn" onactivate="prevHero()" id="left-btn" />
           <Label class="title-label gold" id="name" />
-          <Button class="rotator-btn right-btn" onactivate="nextHero()" />
+          <Button class="rotator-btn right-btn" onactivate="nextHero()" id="right-btn" />
         </Panel>
       </Panel>
       <Panel class="middle left">
         <Panel class="portrait-container">
-          <Image class="portrait" id="portrait" />
+          <Image class="portrait" id="portrait" src="file://{images}/custom_game/pick_screen/portraits/portrait warrior.png" />
         </Panel>
       </Panel>
       <Panel class="bottom left">
@@ -50,7 +50,7 @@
       </Panel>
       <Panel class="bottom right">
         <Panel class="descriptions">
-          <Panel class="column">
+          <Panel class="column descriptions-left">
             <Panel class="description">
               <Label class="description-static gold" text="Role:" />
               <Label class="description-dynamic" id="role-value" />
@@ -66,7 +66,7 @@
               <Label class="description-dynamic" id="physical-damage-value" />
             </Panel>
           </Panel>
-          <Panel class="column">
+          <Panel class="column descriptions-right">
             <Panel class="description description-spacer" />
             <Panel class="description">
               <Label class="description-static gold" text="Strong Vs:" />
@@ -80,7 +80,7 @@
             <Panel class="description description-spacer" />
           </Panel>
         </Panel>
-        <Button class="pick-button" onactivate="pickHero()" />
+        <Button class="pick-button" onactivate="pickHero()" id="pick-btn" />
       </Panel>
     </Panel>
   </Panel>

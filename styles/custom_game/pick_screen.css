@@ -1,0 +1,216 @@
+/* Global settings */
+.pick-screen Label {
+	font-family: 'Goudy Trajan Medium';
+}
+Panel {
+	width: 100%;
+}
+Button {
+	transition: saturation 0.1s linear 0.0s;
+}
+Button:hover {
+	saturation: 1.5;
+}
+Button:active {
+	saturation: 2;
+}
+Button.disabled,
+Button.disabled:hover,
+Button.disabled:active {
+	saturation: 0;
+}
+
+/* Utility */
+.title-label {
+	background-image: url("file://{images}/custom_game/pick_screen/title holder.png");
+	width: 337px;
+	height: 75px;
+	background-size: 100% 150%;
+	text-align: center;
+	padding-top: 22px;
+	font-size: 38px;
+}
+.gold {
+	color: #bb6613;
+}
+
+/* Grid */
+.pick-screen {
+	height: 100%;
+	width: 100%;
+	background-image: url("file://{images}/custom_game/pick_screen/background.png");
+	padding: 80px 110px 40px 110px;
+	background-size: 100%;
+	background-color: #191D21;
+	flow-children: right;
+}
+.column {
+	flow-children: down;
+}
+.left {
+	width: 486px;
+}
+.right {
+	width: 100%;
+}
+
+
+/* Left side */
+.rotator {
+	height: 75px;
+	flow-children: right;
+}
+.rotator-btn {
+	height: 75px;
+	width: 75px;
+	background-size: 100%;
+}
+.left-btn {
+	background-image: url("file://{images}/custom_game/pick_screen/left button.png");
+}
+.right-btn {
+	background-image: url("file://{images}/custom_game/pick_screen/right button.png");
+}
+
+.portrait-container {
+	background-image: url("file://{images}/custom_game/pick_screen/portrait box.png");
+	height: 635px;
+	background-size: 100%;
+	padding: 25px;
+}
+.portrait {
+	height: 100%;
+	width: 100%;
+}
+
+.stats {
+	background-image: url("file://{images}/custom_game/pick_screen/stat box.png");
+	height: 246px;
+	background-size: 100%;
+	padding: 60px 55px 0px 55px;
+	flow-children: right;
+}
+.stats .column {
+	width: 50%;
+}
+.stats-right {
+	margin-left: 30px;
+}
+.stat {
+	height: 50px;
+	margin: 5px 0px;
+	background-size: 100%;
+}
+.stat Label {
+	color: white;
+	horizontal-align: center;
+	vertical-align: center;
+	font-size: 30px;
+	text-shadow: 1px 1px 3px 1.5 #222222;
+}
+.health {
+	background-image: url("file://{images}/custom_game/pick_screen/health stat.png");
+	width: 110.4px;
+	height: 38.4px;
+}
+.damage {
+	background-image: url("file://{images}/custom_game/pick_screen/attack stat.png");
+	width: 120px;
+	height: 60px;
+}
+.mana {
+	background-image: url("file://{images}/custom_game/pick_screen/mana stat.png");
+	width: 110.4px;
+	height: 38.4px;
+}
+.movespeed {
+	background-image: url("file://{images}/custom_game/pick_screen/speed stat.png");
+	background-size: 84px 88px;
+	background-repeat: no-repeat;
+	width: 140px;
+	height: 88px;
+}
+.movespeed Label {
+	margin-left: 65px;
+	margin-bottom: 25px;
+	horizontal-align: left;
+}
+
+/* Right side */
+.abilities-header {
+	horizontal-align: center;
+}
+
+.abilities-showcase {
+	background-image: url("file://{images}/custom_game/pick_screen/ability box.png");
+	height: 635px;
+	background-size: 100%;
+	padding: 40px;
+	flow-children: down-wrap;
+}
+.ability-frame {
+	width: 153.6px;
+	height: 153.6px;
+	background-image: url("file://{images}/custom_game/pick_screen/ability frame.png");
+	background-size: 100%;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+.ability-layout-3-col .ability-frame {
+	margin-left: 110px;
+	margin-right: 110px;
+}
+.ability-layout-4-col .ability-frame {
+	margin-left: 65px;
+	margin-right: 65px;
+}
+.ability-frame DOTAAbilityImage {
+	margin: 24px;
+}
+
+.bottom.right {
+	flow-children: right;
+}
+.descriptions {
+	background-image: url("file://{images}/custom_game/pick_screen/text stat box.png");
+	height: 246px;
+	background-size: 100%;
+	width: 948px;
+	padding: 30px;
+	flow-children: right;
+}
+.descriptions .column {
+	height: 100%;
+}
+.descriptions .descriptions-left {
+	width: 55%;
+}
+.descriptions .descriptions-right {
+	width: 45%;
+}
+.description {
+	height: 20%;
+	flow-children: right;
+}
+.description Label {
+	font-size: 25px;
+	vertical-align: center;
+	text-shadow: 1px 1px 3px 1.5 #222222;
+}
+.description-dynamic {
+	margin-left: 10px;
+}
+
+.pick-button {
+	background-image: url("file://{images}/custom_game/pick_screen/pick button.png");
+	height: 227px;
+	width: 227px;
+	background-size: 100%;
+	margin: 10px 10px 10px 20px;
+}
+.pick-button:active {
+	transform: translateY(2px);
+}
+.pick-button.disabled:active {
+	transform: none;
+}

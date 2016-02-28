@@ -90,6 +90,10 @@ Panel {
 }
 .stat Label {
 	color: white;
+	horizontal-align: center;
+	vertical-align: center;
+	font-size: 30px;
+	text-shadow: 1px 1px 3px 1.5 #222222;
 }
 .health {
 	background-image: url("file://{images}/custom_game/pick_screen/health stat.png");
@@ -113,6 +117,11 @@ Panel {
 	width: 140px;
 	height: 88px;
 }
+.movespeed Label {
+	margin-left: 65px;
+	margin-bottom: 25px;
+	horizontal-align: left;
+}
 
 /* Right side */
 .abilities-header {
@@ -124,6 +133,26 @@ Panel {
 	height: 635px;
 	background-size: 100%;
 	padding: 40px;
+	flow-children: down-wrap;
+}
+.ability-frame {
+	width: 153.6px;
+	height: 153.6px;
+	background-image: url("file://{images}/custom_game/pick_screen/ability frame.png");
+	background-size: 100%;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+.ability-layout-3-col .ability-frame {
+	margin-left: 110px;
+	margin-right: 110px;
+}
+.ability-layout-4-col .ability-frame {
+	margin-left: 65px;
+	margin-right: 65px;
+}
+.ability-frame DOTAAbilityImage {
+	margin: 24px;
 }
 
 .bottom.right {

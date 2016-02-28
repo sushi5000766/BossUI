@@ -10,14 +10,14 @@
     <Panel class="column left">
       <Panel class="top left">
         <Panel class="rotator">
-          <Button class="rotator-btn left-btn" />
-          <Label class="title-label gold" text="Fire Mage" />
-          <Button class="rotator-btn right-btn" />
+          <Button class="rotator-btn left-btn" onactivate="prevHero()" />
+          <Label class="title-label gold" id="name" />
+          <Button class="rotator-btn right-btn" onactivate="nextHero()" />
         </Panel>
       </Panel>
       <Panel class="middle left">
         <Panel class="portrait-container">
-          <Image class="portrait" src="file://{resources}/images/custom_game/pick_screen/portraits/portrait fire mage.png" />
+          <Image class="portrait" id="portrait" />
         </Panel>
       </Panel>
       <Panel class="bottom left">
@@ -46,43 +46,41 @@
         <Label class="abilities-header title-label gold" text="Abilities" />
       </Panel>
       <Panel class="middle right">
-        <Panel class="abilities-showcase">
-        </Panel>
+        <Panel class="abilities-showcase" />
       </Panel>
       <Panel class="bottom right">
         <Panel class="descriptions">
           <Panel class="column">
             <Panel class="description">
               <Label class="description-static gold" text="Role:" />
-              <Label class="description-dynamic" text="Offensive Mage" />
+              <Label class="description-dynamic" id="role-value" />
             </Panel>
             <Panel class="description description-spacer" />
             <Panel class="description">
               <Label class="description-static gold" text="Magic Damage:" />
-              <Label class="description-dynamic" text="Offensive Mage" />
+              <Label class="description-dynamic" id="magic-damage-value" />
             </Panel>
             <Panel class="description description-spacer" />
             <Panel class="description">
               <Label class="description-static gold" text="Physical Damage:" />
-              <Label class="description-dynamic" text="Offensive Mage" />
+              <Label class="description-dynamic" id="physical-damage-value" />
             </Panel>
           </Panel>
           <Panel class="column">
             <Panel class="description description-spacer" />
             <Panel class="description">
               <Label class="description-static gold" text="Strong Vs:" />
-              <Label class="description-dynamic" text="Offensive Mage" />
+              <Label class="description-dynamic" id="strong-vs-value" />
             </Panel>
             <Panel class="description description-spacer" />
             <Panel class="description">
               <Label class="description-static gold" text="Weak Vs:" />
-              <Label class="description-dynamic" text="Offensive Mage" />
+              <Label class="description-dynamic" id="weak-vs-value" />
             </Panel>
             <Panel class="description description-spacer" />
           </Panel>
         </Panel>
-        <Button class="pick-button">
-        </Button>
+        <Button class="pick-button" onactivate="pickHero()" />
       </Panel>
     </Panel>
   </Panel>

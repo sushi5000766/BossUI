@@ -1,0 +1,9 @@
+<root>
+  <styles>
+    <include src="file://{resources}/styles/custom_game/pick_screen.css" />
+    <include src="file://{resources}/styles/dotastyles.css" />
+  </styles>
+  <Panel class="ability-frame" onmouseover="$.DispatchEvent('DOTAShowAbilityTooltip', $.GetContextPanel(), $.GetContextPanel().GetAttributeString('abilityname', ''))" onmouseout="$.DispatchEvent('DOTAHideAbilityTooltip')">
+		<DOTAAbilityImage class="ability-image" />
+  </Panel>
+</root>

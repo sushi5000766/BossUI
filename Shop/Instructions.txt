@@ -1,0 +1,23 @@
+The Shop needs to slide in and out from the right side from the toggle button
+
+Items in the shop need to be able to be added and removed/replaced. I think slot numbers would work best and an item id chart would work best.
+example:
+1 = "item_token_everliving" in slot_1
+2 = "item_team_revive_item" in slot_14
+etc....
+
+Items need to show tooltips and display gold/karma cost (yellow/blue)
+
+Shop needs to be able to be disabled/enabled by the server for inbetween rounds. Button Should change color when disabled
+
+When an item is bought an event needs to return the item and cost
+
+The four "Boss Loot" slots need to disapear on purchase
+
+The "General" and "Scolls" slots need to be able to hold up to 12 slots each
+The "Boss Loot" will always have 4 slots
+
+"General" slots 1 - 12
+"Scolls" slots 13 - 24
+"Boss Loot" slots 25 - 28
+

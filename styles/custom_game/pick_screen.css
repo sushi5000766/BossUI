@@ -35,6 +35,10 @@ Button.disabled:active {
 }
 
 /* Grid */
+.wrapper {
+	height: 100%;
+	width: 100%;
+}
 .pick-screen {
 	height: 100%;
 	width: 100%;
@@ -213,4 +217,25 @@ Button.disabled:active {
 }
 .pick-button.disabled:active {
 	transform: none;
+}
+
+.clock {
+	horizontal-align: center;
+	margin-top: 80px;
+	margin-right: 280px;
+	background-image: url("file://{images}/custom_game/pick_screen/title holder.png");
+	height: 75px;
+	width: 200px;
+	background-size: 100% 140%;
+}
+.clock-label {
+	width: 100%;
+	margin-top: 14px;
+	font-size: 35px;
+	text-align: center;
+	vertical-align: center;
+	color: white;
+}
+.AspectRatio4x3, .AspectRatio5x4 .clock {
+	margin-right: 100px;
 }

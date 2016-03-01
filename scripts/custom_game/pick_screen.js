@@ -2,6 +2,7 @@
 
 var displayedHeroIndex = 0
 var picked = false
+var timer = 61
 
 function setDisplayedHero(hero) {
 	$("#name").text = $.Localize(heroes[hero].heroname)
@@ -65,6 +66,16 @@ function pickHero() {
 		btns.forEach(function(btn) {
 			btn.SetHasClass("disabled", true)
 		})
+	}
+}
+
+function countdown() {
+	timer--
+	$("#clock-label").text = "0" + Math.floor(timer / 60) + ":" + (timer % 60 < 10 ? "0" : "") + (timer % 60)
+	if (timer > 0) {
+		$.Schedule(1, countdown)
+	} else {
+		GameEvents.SendCustomGameEventToServer("force_random", {})
 	}
 }
 
@@ -304,3 +315,4 @@ var heroes = [
 
 
 setDisplayedHero(displayedHeroIndex)
+countdown()

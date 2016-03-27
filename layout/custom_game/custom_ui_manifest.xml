@@ -12,6 +12,6 @@
     <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/manabar.xml" />
     <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/resource.xml" />
     <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/shop.xml" />
-    <!-- <CustomUIElement type="HeroSelection" layoutfile="file://{resources}/layout/custom_game/pick_screen.xml" /> -->
+    <CustomUIElement type="HeroSelection" layoutfile="file://{resources}/layout/custom_game/pick_screen.xml" />
   </Panel>
 </root>

@@ -1,0 +1,23 @@
+<root>
+  <styles>
+    <include src="file://{resources}/styles/custom_game/shop.css" />
+    <include src="file://{resources}/styles/dotastyles.css" />
+  </styles>
+  <scripts>
+    <include src="file://{resources}/scripts/custom_game/shop.js" />
+  </scripts>
+  <Panel class="wrapper" hittest="false">
+	  <Panel class="shop">
+	    <Image class="header" src="file://{images}/custom_game/shop/General Title.png" />
+	    <Panel class="category" id="general">
+	    </Panel>
+	    <Image class="header" src="file://{images}/custom_game/shop/Scroll Title.png" />
+	    <Panel class="category" id="scrolls">
+	    </Panel>
+	    <Image class="header boss-header" src="file://{images}/custom_game/shop/Boss Loot.png" />
+	    <Panel class="category" id="boss">
+	    </Panel>
+	  </Panel>
+	  <Button class="shop-btn" onactivate="toggleShop()" id="shop-btn" />
+	</Panel>
+</root>

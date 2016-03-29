@@ -1,0 +1,124 @@
+.wrapper {
+	height: 100%;
+	width: 100%;
+}
+.shop {
+	flow-children: down;
+	background-image: url("file://{images}/custom_game/shop/Background.png");
+	background-size: 100%;
+	width: 486px;
+	height: 810px;
+	horizontal-align: right;
+	margin-top: 50px;
+	padding: 30px;
+	transition: transform 0.3s ease-in-out 0.0s;
+}
+.shop.hidden {
+	transform: translateX(500px);
+}
+.header {
+	width: 100%;
+	height: 54px;
+}
+.boss-header {
+	height: 70px;
+	margin-top: -4px;
+}
+.category {
+	margin: 15px 0;
+	padding: 5px 0px;
+	height: 183px;
+	horizontal-align: center;
+	flow-children: right-wrap;
+}
+.shop-btn {
+	background-image: url("file://{images}/custom_game/shop/shop-active.png");
+	background-size: 100%;
+	width: 80px;
+	height: 32px;
+	horizontal-align: right;
+	margin-right: 5px;
+	margin-top: 880px;
+}
+.shop-btn.disabled {
+	background-image: url("file://{images}/custom_game/shop/shop-inactive.png");
+}
+
+.shop-item {
+	background-image: url("file://{images}/custom_game/shop/item frame.png");
+	background-size: 100%;
+	padding: 10px;
+	width: 80px;
+	tooltip-position: left;
+}
+.shop-item:hover {
+	saturation: 0.85;
+}
+#boss .shop-item {
+	vertical-align: center;
+	margin: 3px;
+	width: 99px;
+	height: 84px;
+}
+.cost-display-container {
+	background-color: #000000cc;
+	width: 100%;
+	height: 100%;
+}
+.cost-display-container,
+.cost-display {
+	font-size: 24px;
+	opacity: 0;
+	transition: opacity 0.12s linear 0.0s;
+	text-shadow: 2px 2px 4px 1.5 #222222;
+	horizontal-align: center;
+	vertical-align: center;
+}
+#boss .cost-display {
+	font-size: 36px;
+	padding-top: 7px;
+}
+.shop-item:hover .cost-display,
+.shop-item:hover .cost-display-container {
+	opacity: 1;
+}
+.cost-type-gold {
+	color: #CCDB30;
+}
+.cost-type-gems {
+	color: #437DF1;
+}
+
+.item-count-1 .shop-item,
+.item-count-2 .shop-item,
+.item-count-3 .shop-item {
+	vertical-align: center;
+}
+.item-count-1 .shop-item,
+.item-count-2 .shop-item {
+	margin: 10px 50px;
+}
+.item-count-3 .shop-item {
+	margin: 10px 25px;
+}
+.item-count-4 .shop-item {
+	margin: 10px 50px;
+}
+.item-count-5 .shop-item,
+.item-count-6 .shop-item {
+	margin: 10px 25px;
+}
+.item-count-7 .shop-item,
+.item-count-8 .shop-item {
+	margin: 10px 10px;
+}
+.item-count-9 .shop-item,
+.item-count-10 .shop-item {
+	margin: 10px 2px;
+}
+.item-count-11 .shop-item,
+.item-count-12 .shop-item {
+	margin: 10px 0px;
+	width: 70px;
+	height: 58px;
+}

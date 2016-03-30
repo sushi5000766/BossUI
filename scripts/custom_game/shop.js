@@ -41,15 +41,22 @@ function updateShop(event) {
 	var inventory = event.inventory
 	var itemsByCategory = {general: 0, scrolls: 0, boss: 0}
 	for (var i in inventory) {
-		var item = inventory[i].name
+		var item = inventory[i].item
 		var cost = inventory[i].cost
 		var costType = inventory[i].costType
-		if ($("#item" + i)) {
-			$("#item" + i).SetAttributeString("itemname", item)
-		} else {
-			(function(item, costType, cost) {
-				var shopname = (i < 13 ? "general" : (i > 24) ? "boss" : "scrolls")
-				itemsByCategory[shopname]++
+		var shopname = (i < 13 ? "general" : (i > 24) ? "boss" : "scrolls")
+		itemsByCategory[shopname]++
+
+		(function(item, costType, cost) {
+
+			if ($("#item" + i)) {
+				var p = $("#item" + i)
+				p.SetAttributeString("itemname", item)
+				p.itemname = item
+				$("#itemimg" + i).itemname = item
+				var costContainer = $("#costcontainer" + i)
+				var costDisplay = $("#costdisplay" + i)
+			} else {
 				var p = $.CreatePanel("Button", $("#" + shopname), "item" + i)
 				var img = $.CreatePanel("DOTAItemImage", p, "itemimg" + i)
 				p.SetHasClass("shop-item", true)
@@ -59,27 +66,31 @@ function updateShop(event) {
 				img.itemname = item
 
 				var costContainer = $.CreatePanel("Panel", p, "costcontainer" + i)
-				costContainer.SetHasClass("cost-display-container", true)
 				var costDisplay = $.CreatePanel("Label", costContainer, "costdisplay" + i)
-				costDisplay.SetHasClass("cost-display", true)
-				costDisplay.SetHasClass("cost-type-" + costType, true)
-				costDisplay.text = cost
+			}
 
-				p.SetPanelEvent("onmouseover", function() {
-					$.DispatchEvent('DOTAShowAbilityTooltip', p, item)
+			costContainer.SetHasClass("cost-display-container", true)
+			costDisplay.SetHasClass("cost-display", true)
+			costDisplay.SetHasClass("cost-type-gold", false)
+			costDisplay.SetHasClass("cost-type-gems", false)
+			costDisplay.SetHasClass("cost-type-" + costType, true)
+			costDisplay.text = cost
+
+			p.SetPanelEvent("onmouseover", function() {
+				$.DispatchEvent('DOTAShowAbilityTooltip', p, item)
+			})
+			p.SetPanelEvent("onmouseout", function() {
+				$.DispatchEvent('DOTAHideAbilityTooltip')
+			})
+			p.SetPanelEvent("oncontextmenu", function() {
+				GameEvents.SendCustomGameEventToServer("purchase_item", {
+					item: item,
+					costType: costType,
+					cost: cost,
 				})
-				p.SetPanelEvent("onmouseout", function() {
-					$.DispatchEvent('DOTAHideAbilityTooltip')
-				})
-				p.SetPanelEvent("oncontextmenu", function() {
-					GameEvents.SendCustomGameEventToServer("purchase_item", {
-						item: item,
-						costType: costType,
-						cost: cost,
-					})
-				})
-			})(item, costType, cost)
-		}
+			})
+
+		})(item, costType, cost)
 	}
 	for (var shop in itemsByCategory) {
 		for (var i = 1; i <= 12; i++) {

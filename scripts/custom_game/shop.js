@@ -44,12 +44,12 @@ function updateShop(event) {
 		var item = inventory[i].name
 		var cost = inventory[i].cost
 		var costType = inventory[i].costType
+		var shopname = (i < 13 ? "general" : (i > 24) ? "boss" : "scrolls")
+		itemsByCategory[shopname]++
 		if ($("#item" + i)) {
 			$("#item" + i).SetAttributeString("itemname", item)
 		} else {
 			(function(item, costType, cost) {
-				var shopname = (i < 13 ? "general" : (i > 24) ? "boss" : "scrolls")
-				itemsByCategory[shopname]++
 				var p = $.CreatePanel("Button", $("#" + shopname), "item" + i)
 				var img = $.CreatePanel("DOTAItemImage", p, "itemimg" + i)
 				p.SetHasClass("shop-item", true)
